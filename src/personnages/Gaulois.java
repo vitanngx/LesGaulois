@@ -22,13 +22,17 @@ public class Gaulois {
 	    Gaulois asterix = new Gaulois("Astérix", 8);
 	    System.out.println(asterix);
 	}
+	public void boirePotion(int forcePotion) {
+		this.force += forcePotion;
+		parler("Merci pour la potion. Je me sens beaucoup plus fort")
+	}
 	@Override
 	public String toString() {
 		return nom;
 	}
 	
 	public void frapper(Romain romain) {
-		String nomRomain = romain.getNom();
+		String nomRomain = romain.get Nom();
 		System.out.println(nom + "envoie un grand coup a" + nomRomain);
 		int forceCoup = force / 3;
 		romain.recevoirCoup(forceCoup);
